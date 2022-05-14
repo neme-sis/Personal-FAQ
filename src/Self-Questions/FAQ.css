@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    min-height: 80vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
 }
@@ -21,9 +21,17 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    height: 80vh;
     align-items: center;
     background-color: rgb(96, 181, 255);
+    overflow-y: scroll;
+}
+.grid2::-webkit-scrollbar{
+    width: 10px;
+}
+.grid2::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, rgb(222, 222, 222), rgb(0, 136, 255));
+    border-radius: 0px 0px 10px 10px;
 }
 .main{
     min-height: 100vh;
@@ -67,6 +75,7 @@
     background-color: rgb(96, 181, 255);
     height: 30px;
     width: 30px;
+    user-select: none;
 }
 .question button:hover{
     color: white;
@@ -135,6 +144,7 @@ img{
         /* grid-template-columns: 100%;
         grid-template-rows: 50% 50%; */
         flex-direction: column;
+        box-shadow: rgb(0, 117, 219) 2px 2px 4px 1px;
     }
     .grid2{
         min-height: 65vh;
