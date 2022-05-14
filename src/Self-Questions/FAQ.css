@@ -11,9 +11,12 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 100vh;
+    height: 95vh;
     align-items: center;
     justify-content: center;
+}
+.grid1 *{
+    width: 100%;
 }
 
 .grid2{
@@ -128,8 +131,11 @@ img{
 .tilt{
     width: 100%;
 }
+.profile-icons{
+    display: flex;
+    width: 40%;
+}
 .profile-icons *{
-    margin: 10px;
     height: 30px;
 }
 .profile-icons a:first-child{

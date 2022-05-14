@@ -9,9 +9,9 @@ const FAQ = () => {
   return (
     <div className="main">
       <div className='grid'>
-        <Tilt className="grid1" tiltMaxAngleX={12.5} tiltMaxAngleY={12.5}>
-          <ProfileCard/>
-        </Tilt>
+        <div className="grid1">
+          <Tilt tiltMaxAngleX={12.5} tiltMaxAngleY={12.5}><ProfileCard/></Tilt>
+        </div>
         <div className="grid2">
             {questions.map(que => {
               return <SingleQuestion key={que.id} {...que}/>
