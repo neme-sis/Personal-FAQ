@@ -152,6 +152,6 @@ img{
     }
     .grid1{
         width: 100%;
-        height: fit-content;
+        height: fit-content; 
     }
 }
