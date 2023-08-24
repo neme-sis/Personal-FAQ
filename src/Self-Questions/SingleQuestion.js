@@ -9,7 +9,9 @@ const SingleQuestion = ({question, answer}) => {
     <div className='single-question'>
         <div className="question">
             <p>{question}</p>
-            <button onClick={
+            <button 
+            className='see-more-btn'
+            onClick={
                 ()=>{
                         setIsAns(!isAns)
                         setBtnText(btnText === '+'?'-':'+')
